@@ -67,3 +67,5 @@ const divlist = document.querySelector("#list");
 divlist.innerHTML += '<p> this is how you add html </p>'
 */
 
+// I did this first on my Greetings website b4 transferring over
+

@@ -109,7 +109,7 @@ list.previousElementSibling.querySelector('p').innerHTML += '<br/> Nuhuh'; */
 //     console.log(e.target);
 //     console.log(e);
 // })
-
+/*
 var btns = document.querySelectorAll("#section .btn");
 
 Array.from(btns).forEach(function(btn){
@@ -128,4 +128,16 @@ const link = document.querySelector('#section a')
 link.addEventListener('click', function(e){
     e.preventDefault();
     console.log('navigation to', e.target.textContent, ' was prevented')
+})
+*/
+
+// Tutorial # 10
+
+const list = document.querySelector("#list ul")
+
+list.addEventListener('click', function(e){
+    if(e.target.className == 'delete'){
+        const li = e.target.parentElement
+        list.removeChild(li)
+    }
 })

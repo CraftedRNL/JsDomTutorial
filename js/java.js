@@ -69,3 +69,13 @@ divlist.innerHTML += '<p> this is how you add html </p>'
 
 // I did this first on my Greetings website b4 transferring over
 
+// tutorial # 6
+
+const button = document.querySelector('#button');
+
+console.log("#button node type is: " + button.nodeType);
+console.log("#button node name is: " + button.nodeName);
+console.log("#button has child nodes: " + button.hasChildNodes());
+
+const clonedButton = button.cloneNode(true);
+console.log(clonedButton)

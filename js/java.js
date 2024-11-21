@@ -81,10 +81,22 @@ const clonedButton = button.cloneNode(true);
 console.log(clonedButton) */
 
 // tutorial # 7
-
+/*
 const list = document.querySelector("#list");
 
 console.log('the parent node is:', list.parentNode);
 console.log('the parent node is:', list.parentElement.parentElement);
 
-console.log(list.children);
+console.log(list.children); */
+
+// tutorial # 8
+
+const list = document.querySelector("#list");
+
+console.log('list next sibling is', list.nextSibling)
+console.log('list next element sibling is', list.nextElementSibling)
+
+console.log('list previous sibling is', list.previousSibling)
+console.log('list previous element sibling is', list.previousElementSibling)
+
+list.previousElementSibling.querySelector('p').innerHTML += '<br/> Nuhuh';

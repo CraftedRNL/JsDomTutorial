@@ -90,7 +90,7 @@ console.log('the parent node is:', list.parentElement.parentElement);
 console.log(list.children); */
 
 // tutorial # 8
-
+/*
 const list = document.querySelector("#list");
 
 console.log('list next sibling is', list.nextSibling)
@@ -99,4 +99,33 @@ console.log('list next element sibling is', list.nextElementSibling)
 console.log('list previous sibling is', list.previousSibling)
 console.log('list previous element sibling is', list.previousElementSibling)
 
-list.previousElementSibling.querySelector('p').innerHTML += '<br/> Nuhuh';
+list.previousElementSibling.querySelector('p').innerHTML += '<br/> Nuhuh'; */
+
+// Tutorial # 9
+
+// var li = document.querySelector('#list li');
+
+// li.addEventListener('click', function(e){
+//     console.log(e.target);
+//     console.log(e);
+// })
+
+var btns = document.querySelectorAll("#section .btn");
+
+Array.from(btns).forEach(function(btn){
+    btn.addEventListener('click', function(e){
+
+       
+        const bt = e.target.parentElement;
+        bt.parentNode.removeChild(bt)
+    
+
+    })
+})
+
+const link = document.querySelector('#section a')
+
+link.addEventListener('click', function(e){
+    e.preventDefault();
+    console.log('navigation to', e.target.textContent, ' was prevented')
+})
